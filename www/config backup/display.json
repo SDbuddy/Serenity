@@ -1,0 +1,14 @@
+{
+    "containers": [
+        {
+            "containerName": "Temperatures"
+            , "size": "half"
+            , "pins": ["A0", "5", "7"]
+        , }
+        , {
+            "containerName": "Health"
+            , "size": "full"
+            , "pins": ["A2", "4", "9"]
+        }
+    ]
+}

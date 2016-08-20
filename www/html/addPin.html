@@ -1,0 +1,39 @@
+<div class='wrapper' id='addPin'>
+    <table class='table' id='addPinTable'>
+        <thead>
+            <tr>
+                <td>Pin Name</td>
+                <td>Pin</td>
+                <td>Type</td>
+                <td>Description</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input id='pinName' type='text'> </td>
+                <td>
+                    <input id='pin' type='text' style='width:30px;'> </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle typeBtn" type="button" data-toggle="dropdown">Type <span class="caret"></span></button>
+                        <ul class="dropdown-menu typeList">
+                            <li><a href='#'>LED</a></li>
+                            <li><a href="#">Relay</a></li>
+                            <li><a href="#">Thermometer</a></li>
+                            <li><a href="#">Motion</a></li>
+                            <li><a href="#">Piezo</a></li>
+                            <li><a href="#">Servo</a></li>
+                            <li><a href="#">Motor</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <textarea id='description' rows="5"></textarea>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-success addBtn">Add Pin</button>
+    <button class="btn btn-danger cancelBtn">Cancel</button>
+</div>

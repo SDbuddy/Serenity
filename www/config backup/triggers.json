@@ -1,0 +1,52 @@
+{
+    "triggers": {
+        "greaterThan": [{
+            "target": 6,
+            "threshold": 20,
+            "actionIDs": [94293847109, 23442534332]
+        }],
+        "lessThan": [{
+            "target": 5,
+            "threshold": 62,
+            "actionIDs": [94293847109, 23442534332]
+        }],
+        "equalTo": [{
+            "target": 4,
+            "threshold": 47,
+            "actionIDs": [94293847109, 23442534332]
+        }],
+        "between": [{
+            "target": 3,
+            "threshold": [20, 25],
+            "actionIDs": [94293847109, 23442534332]
+        }],
+        "timeWait": [{
+            "time": 21089372048720,
+            "target": 3,
+            "actionIDs": [2387028, 2324524]
+        }],
+        "get": [{
+            "target": "get",
+            "val": 10,
+            "actionIDs": [23421325242534, 23442534332]
+        }, {
+            "target": "get",
+            "val": 11,
+            "actionIDs": [654165146254]
+        }, {
+            "target": "get",
+            "val": 12,
+            "actionIDs": [4654851354684]
+        },{
+            "target": "get",
+            "val": 13,
+            "actionIDs": [8765446341654]
+        }],
+        "post": [{
+            "target": "post",
+            "vals": [47, true, "stockholm", 0.063],
+            "actionIDs": [94293847109, 23442534332]
+        }]
+
+    }
+}

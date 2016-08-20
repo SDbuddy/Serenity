@@ -1,0 +1,47 @@
+<div class='wrapper' id='addTrigger'>
+    <table class='table' id='addTriggerTable'>
+        <thead>
+            <tr>
+                <td>Trigger Type</td>
+                <td id='targetTitle'></td>
+                <td>&nbsp;</td>
+                <td>Actions</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle typeBtn" type="button" data-toggle="dropdown">Types <span class="caret"></span></button>
+                        <ul class="dropdown-menu type">
+                            <li><a href="#">Greater Than</a></li>
+                            <li><a href="#">Less Than</a></li>
+                            <li><a href="#">Equal To</a></li>
+                            <li><a href="#">Between</a></li>
+                            <li><a href="#">Time Wait</a></li>
+                            <li><a href="#">Get</a></li>
+                            <li><a href="#">Post</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div id='targetCol' class="dropdown hide">
+                        <button class="btn btn-default dropdown-toggle targetBtn" type="button" data-toggle="dropdown">Targets <span class="caret"></span></button>
+                        <ul class="dropdown-menu target"> </ul>
+                    </div>
+                </td>
+                <td>
+                    <div id='extraInfo'></div>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle actionBtn" type="button" data-toggle="dropdown">Actions <span class="caret"></span></button>
+                        <ul class="dropdown-menu action"> </ul>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-success addBtn">Add Trigger</button>
+    <button class="btn btn-danger cancelBtn">Cancel</button>
+</div>

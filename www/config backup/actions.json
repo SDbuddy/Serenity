@@ -1,0 +1,47 @@
+{
+  "actions": [
+        {
+            "name": "Notify",
+            "action": "blink",
+            "pinName": "notification light",
+            "type": "led",
+            "ID": "23421325242534"
+        },
+        {
+            "name": "Led Off",
+            "action": "off",
+            "pinName": "notification light",
+            "type": "led",
+            "ID": "654165146254"
+        },
+        {
+            "name": "Stop Pump",
+            "action": "open",
+            "type":"relay",
+            "pinName": "Pump",
+            "ID": "8765446341654"
+        },
+        {
+          "name": "Start Pump",
+          "action": "close",
+          "type":"relay",
+          "pinName": "Pump",
+          "ID": "4654851354684"
+        },
+        {
+          "name": "Open Valve",
+          "action": "servoWrite",
+          "degree": 45,
+          "pinName": "myServo",
+          "ID": "64532135"
+        },
+        {
+          "name": "Piezo Play",
+          "action": "piezo",
+          "song": "C D F D A - A A A A G G G G - - C D F D G - G G G G F F F F - -",
+          "tempo": 100,
+          "pinName": "myServo",
+          "ID": "64532135"
+        }
+    ]
+}

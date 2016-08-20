@@ -1,0 +1,15 @@
+
+{
+    "controls": [
+        {
+            "buttonName": "Lights",
+            "actionIDs": ["134408012016"]
+        },
+        {
+            "buttonName": "Pump1",
+            "actionIDs": ["94293847109","23442534332"]
+        }
+
+    ]
+
+}

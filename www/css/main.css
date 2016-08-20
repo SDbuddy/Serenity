@@ -1,0 +1,30 @@
+.panel-heading {
+    background-color: #0B3C49;
+    color: #CBD4C2;
+}
+
+.panel-body {
+    background-color: #EAFDF8;
+}
+
+body {
+    background-color: #7C8483 !important;
+}
+
+p {
+    font-size: 20px;
+}
+
+.modal-dialog {
+    width: 1000px !important !important !important;
+}
+
+.sidebar-nav li {
+    padding-bottom: 10px
+}
+
+.add {
+    position: relative;
+    float: right;
+    bottom: 45px;
+}

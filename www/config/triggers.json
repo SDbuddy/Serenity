@@ -1,0 +1,19 @@
+{
+ "triggers": {
+  "greaterThan": [],
+  "lessThan": [],
+  "equalTo": [
+   {
+    "target": "Motion Sensor",
+    "threshold": "1",
+    "actionIDs": [
+     1471666138438
+    ]
+   }
+  ],
+  "between": [],
+  "timeWait": [],
+  "get": [],
+  "post": []
+ }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Serenity Dash</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/snackbar.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"> <a href="#">
+                        Serenity
+                    </a> </li>
+                <li id='dashboard'>
+                    <h3><a href="#">Dashboard</a></h3> </li>
+                <li id='triggers'>
+                    <h3><a href="#">Triggers</a> </h3></li>
+                <li id='actions'>
+                    <h3><a href="#">Actions</a></h3> </li>
+                <li id='pins'>
+                    <h3><a href="#">Pins</a></h3> </li>
+                <li id='display'>
+                    <h3><a href="#">Display</a></h3> </li>
+                <li id='general'>
+                    <h3><a href="#">General</a></h3> </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="container-fluid">
+                            <div class="panel panel-defualt">
+                                <div class='panel-heading'>
+                                    <h2 align='center'>Data Header</h2></div>
+                                <div class="panel-body">
+                                    <p align='center'>Data Label: Val
+                                        <br>Data Label 2: Val</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="container-fluid">
+                            <div class="panel panel-defualt">
+                                <div class='panel-heading'>
+                                    <h2 align='center'>Data Header</h2></div>
+                                <div class="panel-body">
+                                    <center>
+                                        <div id="DemoChart"></div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="container-fluid">
+                            <div class="panel panel-defualt">
+                                <div class='panel-heading'>
+                                    <h2 align='center'>Data Header</h2></div>
+                                <div class="panel-body">
+                                    <center>
+                                        <div class='gauge1'></div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="container-fluid">
+                            <div class="panel panel-defualt">
+                                <div class='panel-heading'>
+                                    <h2 align='center'>Controls</h2></div>
+                                <div class="panel-body">
+                                    <div class='controls'>
+                                        <center>
+                                            <div class="btn-group btn-group-lg">
+                                                <button type="button" class="btn btn-success">Lights On</button>
+                                                <button type="button" class="btn btn-default">Lights Off</button>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="btn-group btn-group-lg">
+                                                <button type="button" class="btn btn-primary">Return to normal operation</button>
+                                                <button type="button" class="btn btn-danger">Emergency Stop</button>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='container-fluid'>
+                <div id="settingsModal" class="modal fade container-fluid">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Modal He,mnader</h4> </div>
+                            <div class="modal-body">
+                                <p>Some text in the modal.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id='snackbar'></div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+    <script>
+        var time = new Date().getTime();
+        $(document.body).bind("mousemove keypress", function (e) {
+            time = new Date().getTime();
+        });
+
+        function refresh() {
+            //if (new Date().getTime() - time >= 5000) window.location.reload(true);
+            //else setTimeout(refresh, 1000);
+        }
+        setTimeout(refresh, 1000);
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/chartDemo.js"></script>
+    <script src="js/socket.io-1.4.5.js"></script>
+    <script src="snackbar.js"></script>
+    <script src="js/addConfig.js"></script>
+    <script src="js/makeTables.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

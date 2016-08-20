@@ -1,0 +1,80 @@
+body {
+    overflow: hidden;
+}
+
+.sidebar-nav {
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+    background-color: #0000b3;
+    overflow: hidden !important;
+    height: 10000px;
+}
+
+.content {
+    overflow: hidden !important;
+}
+
+.page-content {
+    background-color: gray;
+    padding: 20px;
+    overflow: hidden !important;
+    height: 10000px;
+}
+
+.page {}
+
+.list-group-item {
+    background-color: #b3b300;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    height: 80px;
+}
+
+.list-group-item a {
+    color: white;
+}
+
+.nav-header {
+    font-size: 50px;
+}
+
+.panel-heading {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.panel-body {
+    font-size: 25px;
+    overflow-y: scroll;
+}
+
+th {
+    text-align: center;
+}
+
+tr {
+    text-align: center;
+}
+
+#description {
+    width: 400px;
+}
+
+.isActive {
+    background-color: #806000;
+}
+
+.add {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    float: right !important;
+}
+
+.apply {
+    float: right;
+    position: relative;
+    bottom: 43px;
+    right: 39px;
+}

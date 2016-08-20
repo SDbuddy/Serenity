@@ -1,0 +1,26 @@
+{
+    "timeZone": "EST"
+    , "wifi": ["SSID", "PSK"]
+    , "version": "0.0.0.0.0.1 beta-alpha"
+    , "users": [
+        {
+            "name": "afcofiel"
+            , "pass": "inAworld"
+            , "email": "asquaredfc@gmail.com"
+            , "pushbulletAPIkey": "112233455678987755"
+        }
+        , {
+            "name": "hpanne"
+            , "pass": "IpeeRainbows"
+            , "email": ""
+            , "pushbulletAPIkey": "11223asdas43487755"
+        }
+        , {
+            "name": "madTanker"
+            , "pass": "zombieKiller67"
+            , "email": "andrewcofield67@gmail.com"
+        }
+    ]
+    , "superControls": true
+    , "usingArduino": true
+}

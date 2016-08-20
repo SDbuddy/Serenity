@@ -1,0 +1,15 @@
+//Controls Config
+{
+    "controls": [
+        {
+            "buttonName": "Lights",
+            "actionIDs": ["134408012016"] //unix timestamp
+        },
+        {
+            "buttonName": "Pump1",
+            "actionIDs": ["94293847109","23442534332"]//unix timestamp
+        }
+
+    ]
+
+}

@@ -1,0 +1,38 @@
+<div class='wrapper' id='addAction'>
+    <table class='table' id='addActionTable'>
+        <thead>
+            <tr>
+                <td>Action Name</td>
+                <td>Target</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input id='actionName' type='text'> </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle targetBtn" type="button" data-toggle="dropdown">Target <span class="caret"></span></button>
+                        <ul class="dropdown-menu targetList">
+                            <li><a href='#'>PushBullet</a></li>
+                            <li><a href="#">Get Request</a></li>
+                            <li><a href="#">Post Request</a></li>
+                            <li><a href="#">MQTT</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle actionBtn" type="button" data-toggle="dropdown">Action <span class="caret"></span></button>
+                        <ul class="dropdown-menu actionList">
+                            <li id='startItem'><a href="#">Select a target first</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-success addBtn">Add Action</button>
+    <button class="btn btn-danger cancelBtn">Cancel</button>
+</div>

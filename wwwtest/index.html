@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TEST PAGE </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body style=background-color:lightblue>
+    <br>
+    <br>
+    <br>
+    <div class="container" style=background-color:AntiqueWhite>
+        <br>
+
+        <ul class="list-group">
+            <li class="list-group-item">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href='#' id='settings' align="right" class="btn btn-default"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span></a>
+                        <h3 class="panel-title text-center">
+                          <b>Tank Temperature</b>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="text-center"> <b>AVG Tank Temperature</b>
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td> Temp 1: 80 F </td>
+                                                    <td> Temp 2: 82 F </td>
+                                                    <td> Avg: 81 F </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td class="text-center"> <b>Overflow Temperature</b>
+                                        <br>
+                                        <br> 85 F </td>
+                                    <td class="text-center"> <b>Overhead Temperature</b>
+                                        <br>
+                                        <br> 74 F </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">
+                <b>Water Quality</b>
+              </h3> </div>
+                    <div class="panel-body">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="text-center"> PH: 7.15 </td>
+                                    <td class="text-center"> POH: 6.85 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="text-center"> O2 Concentration: .4 M </td>
+                                    <td class="text-center"> CO2 Concentration: 1.2 M </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">
+                <b>Electric Controls</b>
+              </h3> </div>
+                    <div class="panel-body text-center" id='controlPanel'> </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="settingsModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Button Settings</h4>
+          </div>
+          <div class="modal-body">
+            <p>Edit Buttons</p>
+            <form id='buttonConfig'>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="/js/usbHandle.js"></script>
+    <script src='/js/main.js'>
+    </script>
+</body>
+
+</html>

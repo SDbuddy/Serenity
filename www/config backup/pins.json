@@ -1,0 +1,31 @@
+{
+    "pins": [
+        {
+            "pin": 8
+            , "name": "Pump"
+            , "type": "relay"
+            , "description": "Pump plug wired to relay 7"
+            , "io": "output"
+        }
+        , {
+            "pin": 13
+            , "name": "notification light"
+            , "type": "led"
+            , "description": "Indicator LED"
+            , "io": "output"
+        }
+        , {
+            "pin": "A0"
+            , "name": "light sensor"
+            , "type": "light"
+            , "description": "Photocell measuring overhead light intensity"
+            , "io": "input"
+        }, {
+            "pin": "A1"
+            , "name": "tank temperature"
+            , "type": "thermometer"
+            , "description": "Temperature sensor measing temp of overflow sump"
+            , "io": "input"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+ "pins": [
+  {
+   "name": "Motion Sensor",
+   "pin": "4",
+   "description": "Motion Sensor attached to pin 4 of the arduino",
+   "type": "motion",
+   "io": "input"
+  },
+  {
+   "name": "LED",
+   "pin": "13",
+   "description": "Led attached to pin 13 of arduino",
+   "type": "led",
+   "io": "output"
+  }
+ ]
+}
