@@ -1,0 +1,31 @@
+{
+    "timeCheckInterval": 2000,
+    "rules": [{
+        "name": "Setup",
+        "description": "Basic Setup of rules.json file",
+        "input": {
+            "listeningTo": "sensorDevice",
+            "comparator": "equalTo",
+            "comparison": 1
+        },
+        "output": {
+            "connectingTo": "actionDevice",
+            "action": "on/off/setTo"
+        }
+
+    }, {
+        "name": "Setup2",
+        "description": "Basic Setup2 of rules.json file",
+        "input": {
+            "listeningTo": "sensorDevice",
+            "comparator": "between",
+            "comparison": [-1, 1]
+        },
+        "output": {
+            "connectingTo": "actionDevice",
+            "action": "cast",
+            "url": "http://www.google.com"
+        }
+
+    }]
+}

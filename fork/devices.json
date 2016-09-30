@@ -1,0 +1,32 @@
+{
+    "devices": [{
+      "name":"lamp switch",
+      "type": "wemo outlet",
+      "description":"weMo smart plug connected to living room lamp",
+      "ip": [192,168,1,205],
+      "port": 49308,
+      "connectedTo": "lamp"
+    }, {
+      "name":"testduino",
+        "type": "arduino",
+        "boardID": "500201",
+        "description": "generic arduino for testing purposes",
+        "connection":{
+          "type": "bluetooth",
+          "port": "/dev/rfbind0"
+          } ,
+        "pins": [{
+            "pin": 4,
+            "name": "Motion Sensor",
+            "type": "motion",
+            "description": "testing motion sensor",
+            "io": "input"
+        }, {
+            "pin": 13,
+            "name": "notification light",
+            "type": "led",
+            "description": "Indicator LED",
+            "io": "output"
+        }]
+    }]
+}
