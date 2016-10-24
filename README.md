@@ -8,4 +8,3 @@ Serenity is compatible with off the shelf Arduino sensors and is completely free
 
 The goal of this project is to create a tool that can easily automate any IoT device in your home and also allows you to create and manage your own smart devices/system.
 
-2016 Hackaday Prize
